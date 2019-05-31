@@ -111,7 +111,6 @@ int main(int argc, char *argv[]) {
   ics_freelist_print();
   press_to_cont();
   ics_free(memory);
-  ics_freelist_print();
   press_to_cont();
 
   ics_mem_fini();
