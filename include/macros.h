@@ -4,3 +4,5 @@
 #define DWSIZE sizeof(void*) * 2
 #define MAX_PAGES 4
 #define MIN_BSIZE (2 * WSIZE + ALIGNMENT)
+#define HEADER_UNUSED 0xaaaaaaaa;
+#define FOOTER_UNUSED 0xffffffffffff;

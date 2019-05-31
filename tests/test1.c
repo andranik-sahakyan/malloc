@@ -67,6 +67,7 @@ int main(int argc, char *argv[]) {
   null_check(value1, sizeof(int));
   payload_check(value1);
   ics_payload_print((void*)value1);
+  ics_freelist_print();
   press_to_cont();
 
   // Now assign a value
@@ -77,6 +78,7 @@ int main(int argc, char *argv[]) {
   // Now check its value
   CHECK_PRIM_CONTENTS(value1, VALUE1_VALUE, "%d", "value1");
   ics_payload_print((void*)value1);
+  ics_freelist_print();
   press_to_cont();
 
   printf("=== Test3: Allocate a second variable ===\n");
